@@ -1,0 +1,11 @@
+fastapi                         # Serve APIs for your models
+click                           # command line interface           
+pydantic                        # datamodels and their validation       
+Sphinx==7.3.0                   # documentation    
+sphinxcontrib-applehelp==1.0.8  # documentation related plugins     
+sphinxcontrib-devhelp==1.0.6    # documentation related plugins
+sphinxcontrib-htmlhelp==2.0.5   # documentation related plugins
+sphinxcontrib-jsmath==1.0.1     # documentation related plugins
+sphinxcontrib-qthelp==1.0.7     # documentation related plugins
+twine                           # pipeline publish artifacts
+# Add new packages below with comments on what their purpose is

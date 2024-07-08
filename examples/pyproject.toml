@@ -1,0 +1,44 @@
+
+[build-system]
+requires = ['setuptools>=42', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'sig_python_project'
+version = '0.1.0'
+description = 'SIG Python Boilerplate contains all the boilerplate you need to create a Python package and deploy using azure devops.'
+authors = [ {name = 'Shivaram Kumar', email = 'Shivaram.Kumar@sig.biz' }]
+license = { text = 'Licensed to SIG Combibloc Systems GmbH' }
+readme = 'README.rst'
+keywords = ['(test, template, python)']
+classifiers = [
+    'Programming Language :: Python :: Python310',
+    'License :: UnLicense',
+    'Operating System :: OS Independent',
+]
+requires-python = '>=3.6'
+dependencies = [
+    'wheel',
+    'Click>=7.0',
+    'watchdog==4.0.*',
+    'alabaster',
+    'pre-commit'
+]
+
+[project.optional-dependencies]
+dev = [
+    'black >=21.5b0',
+    
+]
+
+
+[tool.pytest.ini_options]
+minversion = '6.0'
+addopts = '-ra -q'
+testpaths = [
+    'tests'
+]
+
+[tool.flake8]
+max-line-length = 120
+
